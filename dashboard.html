@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="bg--pattern container-fluid d-flex flex-fill align-items-center justify-content-around py-13">
+      <div class="col-5 d-flex align-items-center justify-content-center">
+        <img src="./assets/logo-large.png" alt="" width="470">
+      </div>
+
+      <div class="col-3 login-form__wrapper">
+          <div class="d-flex justify-content-center gap-5">
+            <div class="form__tab active">Login</div>
+            <div class="form__tab">Register</div>
+          </div>
+
+          <h2 class="form__heading mt-5"><b>Welcome</b></h2>
+          <p class="mt-1">Pleace login to your account</p>
+        <form action="" class="mt-11">
+          <div>
+            <label for="username" class="form__label d-block">Username or Email</label>
+            <input type="text" name="username" class="form__input">
+          </div>
+          <div class="mt-2">
+            <label for="password" class="form__label d-block">Username or Email</label>
+            <input type="password" name="password" class="form__input">
+          </div>
+
+          <a href="#" class="d-block mt-1">Forgot password</a>
+
+          <div class="d-flex justify-content-end">
+            <button class="form__button mt-1">OK</button>
+          </div>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
