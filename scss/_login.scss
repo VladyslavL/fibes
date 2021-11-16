@@ -1,0 +1,55 @@
+.login-form__wrapper {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.4rem;
+
+	.form {
+		&__tab {
+			padding: 2rem 7rem;
+			border-radius: 1.6rem;
+			cursor: pointer;
+			&.active,
+			&:hover {
+				background-color: #6330c6;
+				color: #fff;
+			}
+		}
+
+		&__heading {
+			font-family: "Roboto", sans-serif;
+			font-size: 3.6rem;
+		}
+
+		&__input {
+			display: block;
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #000;
+			height: 5rem;
+			padding-left: 1.5rem;
+			outline: none;
+		}
+
+		&__button {
+			padding: 2rem 7rem;
+			border-radius: 0.9rem;
+			cursor: pointer;
+			background-color: #6330c6;
+			color: #fff;
+			min-width: 22rem;
+			border: none;
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+
+	a {
+		color: currentColor;
+		&:hover {
+			color: currentColor;
+			text-decoration: none;
+		}
+	}
+}

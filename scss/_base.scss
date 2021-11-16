@@ -1,0 +1,25 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	min-height: 108rem;
+	font-family: "Inter", sans-serif;
+}
+
+b {
+	font-weight: bold;
+}
+
+.container-fluid {
+	min-width: 192rem;
+}
+
+.bg {
+	&--pattern {
+		background: url(../assets/patern.svg) top -13rem left repeat-x, url(../assets/patern.svg) bottom -13rem left repeat-x;
+	}
+}
