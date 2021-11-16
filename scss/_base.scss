@@ -1,5 +1,6 @@
 html {
 	font-size: 10px;
+	font-size: calc(10px + (20 - 10) * ((100vw - 1920px) / (3840 - 1920)));
 }
 
 body {
