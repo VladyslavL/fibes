@@ -8,40 +8,614 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <div class="bg--pattern container-fluid d-flex flex-fill align-items-center justify-content-around py-13">
-      <div class="col-5 d-flex align-items-center justify-content-center">
-        <img src="./assets/logo-large.png" alt="" width="470">
+  <div class="dashboard__wrapper container-fluid d-flex p-0 flex-fill">
+    <aside class="sidebar flex-shrink-0">
+      <a href="/" class="sidebar__logo">
+        <img src="./assets/logo-small.png" alt="" height="66">
+      </a>
+      <hr>
+      <nav class="siderbar__nav p-1">
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Category.svg" alt="" width="24">
+          </div>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Ticket-Star.svg" alt="" width="24">
+          </div>
+          <span>Order</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Shield-Done.svg" alt="" width="24">
+          </div>
+          <span>Invoice</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/3-User.svg" alt="" width="24">
+          </div>
+          <span>Customer</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Bookmark.svg" alt="" width="24">
+          </div>
+          <span>Articles</span>
+        </a>
+
+        <hr class="mt-1">
+
+        <h3 class="sidebar__nav-heading my-1">Admin</h3>
+
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Document.svg" alt="" width="24">
+          </div>
+          <span>Support</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Setting.svg" alt="" width="24">
+          </div>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/info.svg" alt="" width="24">
+          </div>
+          <span>Info</span>
+        </a>
+
+        <hr class="mt-1">
+      </nav>
+    </aside>
+
+    <div class="dashboard__content flex-grow-1 overflow-auto">
+      <div class="position-sticky top-0">
+        <div class="dashboard__topbar d-flex align-items-center justify-content-between">
+          <div class="topbar__input-field position-relative">
+            <input type="text" name="" id="" placeholder="Search..." class="topbar__input">
+            <img src="./assets/icons/Search.svg" alt="" class="topbar__input-icon" width="19">
+          </div>
+
+          <div class="topbar__nav d-flex align-items-center">
+            <a href="#" class="topbar__nav-item lang">
+              <img src="./assets/icons/lang.png" alt="" width="31">
+            </a>
+            <a href="#" class="topbar__nav-item">
+              <img src="./assets/icons/Notification.svg" alt="" width="24">
+            </a>
+            <a href="#" class="topbar__nav-item">
+              <img src="./assets/icons/Message.svg" alt="" width="24">
+            </a>
+            <a href="#" class="topbar__nav-item d-flex align-items-center user">
+              <div class="user__image">
+                <img src="./assets/icons/avatar.png" alt="" width="45">
+              </div>
+              <div>
+                <p class="user__name">Austin Robertson</p>
+                <p class="user__position">Manager</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="dashboard__banner">
+          <h2 class="dashboard__banner-heading">Hello Fibes mate!</h2>
+          <p class="mt-1">We are on a mission to provide beautiful fabric !! <3</p>
+        </div>
       </div>
 
-      <div class="col-3 login-form__wrapper">
-          <div class="d-flex gap-5">
-            <div class="form__tab active">Login</div>
-            <div class="form__tab">Register</div>
+      <div class="dashboard__table px-4 py-1_6">
+        <div class="table__header">
+          <h3 class="table__heading">Box Inquiry</h3>
+          <div class="table__nav d-flex gap-1_6">
+            <div class="table__nav-item d-flex align-items-center">
+              <img src="./assets/icons/sort.svg" alt="" width="24" class="me-1">
+              <span>Dated</span>
+            </div>
+            <div class="table__nav-item d-flex align-items-center">
+              <span>Quoted amount</span>
+            </div>
+            <div class="table__nav-item d-flex align-items-center">
+              <span>Sales representative</span>
+            </div>
+            <div class="table__nav-item d-flex align-items-center">
+              <span>Invoice draft</span>
+            </div>
+            <div class="table__nav-item d-flex align-items-center status">
+              <select name="status" id="">
+                <option value="" selected>Status</option>
+                <option value="">Active</option>
+                <option value="">Pending</option>
+                <option value="">Expiring</option>
+                <option value="">Archived</option>
+              </select>
+            </div>
+            <div class="table__nav-item d-flex gap-1_6 buttons">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
           </div>
+        </div>
+        <div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/pending.svg" alt="" width="24">
+              <span class="status">Pending</span>
+            </div>
 
-          <h2 class="form__heading mt-5"><b>Welcome to Fibes </b></h2>
-          <p class="form__text mt-1">Enter your credentials to login to your account</p>
-        <form action="" class="mt-4">
-          <div>
-            <label for="username" class="form__label d-block">Username or Email</label>
-            <input type="text" name="username" class="form__input">
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
           </div>
-          <div class="mt-2">
-            <label for="password" class="form__label d-block">Password</label>
-            <input type="password" name="password" class="form__input">
-          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/active.svg" alt="" width="24">
+              <span class="status">Active</span>
+            </div>
 
-          <div class="d-flex justify-content-end">
-            <a href="#" class="form__link d-block mt-1">Forgot password?</a>
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
           </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/expiring.svg" alt="" width="24">
+              <span class="status">Expiring</span>
+            </div>
 
-          <button class="form__button mt-3">Login</button>
-        </form>
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/pending.svg" alt="" width="24">
+              <span class="status">Pending</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/active.svg" alt="" width="24">
+              <span class="status">Active</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/expiring.svg" alt="" width="24">
+              <span class="status">Expiring</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/pending.svg" alt="" width="24">
+              <span class="status">Pending</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/active.svg" alt="" width="24">
+              <span class="status">Active</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/expiring.svg" alt="" width="24">
+              <span class="status">Expiring</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/pending.svg" alt="" width="24">
+              <span class="status">Pending</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/active.svg" alt="" width="24">
+              <span class="status">Active</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/expiring.svg" alt="" width="24">
+              <span class="status">Expiring</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/pending.svg" alt="" width="24">
+              <span class="status">Pending</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/active.svg" alt="" width="24">
+              <span class="status">Active</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/expiring.svg" alt="" width="24">
+              <span class="status">Expiring</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+          <div class="table__row muted d-flex align-items-center gap-1_6">
+            <div class="table__row-item">
+              <p class="date">01.02.2021</p>
+              <span class="id">ID 0001894</span>
+            </div>
+            <div class="table__row-item">
+              <p class="amount">Kr 4.000,00</p>
+            </div>
+            <div class="table__row-item">
+              <p class="name">Austin Robertson</p>
+            </div>
+            <div class="table__row-item d-flex flex-column">
+              <a href="#" class="link">Invoice</a>
+              <span class="link-date">01.08.2020</span>
+            </div>
+            <div class="table__row-item d-flex align-items-center gap-0_8 status">
+              <img src="./assets/icons/archived.svg" alt="" width="24">
+              <span class="status">Archived</span>
+            </div>
+
+            <div class="table__row-item d-flex align-items-center buttons gap-1_6">
+              <div class="cursor__pointer">
+                <img src="./assets/icons/download.svg" alt="" width="32">
+              </div>
+              <div class="cursor__pointer">
+                <img src="./assets/icons/3dots.svg" alt="" width="32">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
