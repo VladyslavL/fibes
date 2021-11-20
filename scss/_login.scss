@@ -1,22 +1,33 @@
 .login-form__wrapper {
 	font-family: "Poppins", sans-serif;
-	font-size: 2.4rem;
 
 	.form {
 		&__tab {
-			padding: 2rem 7rem;
-			border-radius: 1.6rem;
+			padding: 2rem 3rem;
+			font-size: 2.8rem;
 			cursor: pointer;
+			color: #666666;
+			border-bottom: 3px solid transparent;
+			text-transform: uppercase;
+			line-height: 1;
 			&.active,
 			&:hover {
-				background-color: #6330c6;
-				color: #fff;
+				color: #6330c6;
+				border-color: currentColor;
 			}
 		}
 
 		&__heading {
+			font-size: 2.4rem;
+		}
+
+		&__text {
+			color: #9a9ea5;
+		}
+
+		&__label {
+			font-size: 1.8rem;
 			font-family: "Roboto", sans-serif;
-			font-size: 3.6rem;
 		}
 
 		&__input {
@@ -30,26 +41,29 @@
 			outline: none;
 		}
 
+		&__link {
+			font-size: 1.8rem;
+			text-decoration: none;
+			color: #000;
+			font-family: "Roboto", sans-serif;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 		&__button {
-			padding: 2rem 7rem;
-			border-radius: 0.9rem;
+			padding: 1.4rem 5.5rem;
+			border-radius: 1rem;
+			font-size: 1.8rem;
+			line-height: 1;
 			cursor: pointer;
 			background-color: #6330c6;
 			color: #fff;
-			min-width: 22rem;
 			border: none;
 
 			&:hover {
 				opacity: 0.9;
 			}
-		}
-	}
-
-	a {
-		color: currentColor;
-		&:hover {
-			color: currentColor;
-			text-decoration: none;
 		}
 	}
 }
