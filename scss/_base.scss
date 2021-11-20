@@ -23,7 +23,7 @@ p {
 }
 
 .container-fluid {
-	min-width: 120rem;
+	min-width: 192rem;
 }
 
 .cursor {
@@ -32,6 +32,12 @@ p {
 	}
 	&__default {
 		cursor: default;
+	}
+}
+
+.rotate {
+	&__180 {
+		transform: rotate(180deg);
 	}
 }
 

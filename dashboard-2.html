@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="dashboard__wrapper container-fluid d-flex p-0 flex-fill">
+    <aside class="sidebar flex-shrink-0">
+      <a href="/" class="sidebar__logo">
+        <img src="./assets/logo-small.png" alt="" height="66">
+      </a>
+      <hr>
+      <nav class="siderbar__nav p-1">
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Category.svg" alt="" width="24">
+          </div>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Ticket-Star.svg" alt="" width="24">
+          </div>
+          <span>Order</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Shield-Done.svg" alt="" width="24">
+          </div>
+          <span>Invoice</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/3-User.svg" alt="" width="24">
+          </div>
+          <span>Customer</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Bookmark.svg" alt="" width="24">
+          </div>
+          <span>Articles</span>
+        </a>
+
+        <hr class="mt-1">
+
+        <h3 class="sidebar__nav-heading my-1">Admin</h3>
+
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Document.svg" alt="" width="24">
+          </div>
+          <span>Support</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/Setting.svg" alt="" width="24">
+          </div>
+          <span>Settings</span>
+        </a>
+        <a href="#" class="sidebar__nav-item d-flex align-items-center">
+          <div class="icon">
+            <img src="./assets/icons/info.svg" alt="" width="24">
+          </div>
+          <span>Info</span>
+        </a>
+
+        <hr class="mt-1">
+      </nav>
+    </aside>
+
+    <div class="dashboard__content flex-grow-1 overflow-auto">
+      <div class="position-sticky top-0">
+        <div class="dashboard__topbar d-flex align-items-center justify-content-between">
+          <div class="topbar__input-field position-relative">
+            <input type="text" name="" id="" placeholder="Search..." class="topbar__input">
+            <img src="./assets/icons/Search.svg" alt="" class="topbar__input-icon" width="19">
+          </div>
+
+          <div class="topbar__nav d-flex align-items-center">
+            <a href="#" class="topbar__nav-item lang">
+              <img src="./assets/icons/lang.png" alt="" width="31">
+            </a>
+            <a href="#" class="topbar__nav-item">
+              <img src="./assets/icons/Notification.svg" alt="" width="24">
+            </a>
+            <a href="#" class="topbar__nav-item">
+              <img src="./assets/icons/Message.svg" alt="" width="24">
+            </a>
+            <a href="#" class="topbar__nav-item d-flex align-items-center user">
+              <div class="user__image">
+                <img src="./assets/icons/avatar.png" alt="" width="45">
+              </div>
+              <div>
+                <p class="user__name">Austin Robertson</p>
+                <p class="user__position">Manager</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex gap-2_5 p-2">
+        <div class="dashboard__plate left">
+          <div class="dashboard__breadcrumbs d-flex gap-0_8 py-2_4 px-3_5">
+            <a href="#">Box Inquiry</a>
+            <span>/</span>
+            <a href="#">ID_001894</a>
+          </div>
+
+          <div class="dashboard__tabs">
+            <div class="tab">
+              <div class="tab__header d-flex align-items-center cursor__pointer gap-2_5 py-2_5 px-3_5">
+                <img src="./assets/icons/order.svg" alt="" width="24">
+
+                <span>Order information</span>
+
+                <img src="./assets/icons/Chevron-down-Small.svg" alt="" width="16" class="ms-auto">
+              </div>
+              <div class="tab__body pe-3_5">
+                <div class="d-flex gap-1">
+                  <div>
+                    <h3 class="id">ID 001894</h3>
+
+                    <p class="muted mt-1_5">last updated on 01.08.2020</p>
+                    <p class="muted">Upholster sales rep: Austin Robertson</p>
+
+                    <div class="buttons d-flex gap-0_8 mt-5">
+                      <button>Cancel order</button>
+                      <button>Change status</button>
+                    </div>
+                  </div>
+
+                  <div class="ms-auto flex-shrink-0 flex-grow-0 d-flex flex-column align-items-center">
+                    <p class="muted">Order status</p>
+                    <!-- styles are added for pending, active, expiting and archived sttusesm, just change the class -->
+                    <div class="status pending mt-1_5">Pending</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="tab">
+              <div class="tab__header d-flex align-items-center cursor__pointer gap-2_5 py-2_5 px-3_5">
+                <img src="./assets/icons/Person.svg" alt="" width="24">
+
+                <span>Customer information</span>
+
+                <img src="./assets/icons/Chevron-down-Small.svg" alt="" width="16" class="ms-auto">
+              </div>
+              <div class="tab__body pe-3_5">
+                <form action="" class="form d-flex flex-column gap-2">
+                  <div class="form__field">
+                    <label class="form__label" for="first_name">First name</label>
+                    <input type="text" name="first_name" class="form__input" id="first_name" placeholder="First name" value="Sarah"> 
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="last_name">Last name</label>
+                    <input type="text" name="last_name" class="form__input" id="last_name" placeholder="Last name" value="King"> 
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="email">Email</label>
+                    <input type="email" name="email" class="form__input" id="email" placeholder="sarahking@gmail.com"> 
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="mobile_number">Mobile number</label>
+                    <div class="position-relative">
+                      <input type="tel" name="" class="form__input" id="mobile_number" placeholder="Eg. 812345678"> 
+                      <select name="" id="" class="country-code">
+                        <option value="" selected>+91</option>
+                        <option value="" >+91</option>
+                        <option value="" >+911</option>
+                        <option value="" >+9</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="alt_number">Alternative number</label>
+                    <div class="position-relative">
+                      <input type="tel" name="" class="form__input" id="alt_number" placeholder="Eg. 812345678"> 
+                      <select name="" id="" class="country-code">
+                        <option value="" selected>+91</option>
+                        <option value="" >+91</option>
+                        <option value="" >+91</option>
+                        <option value="" >+91</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="company">Company</label>
+                    <input type="text" name="company" class="form__input" id="company" placeholder="Quanroo"> 
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr>
+            <div class="tab">
+              <div class="tab__header d-flex align-items-center cursor__pointer gap-2_5 py-2_5 px-3_5">
+                <img src="./assets/icons/map.svg" alt="" width="24">
+
+                <span>Shipping Details</span>
+
+                <img src="./assets/icons/Chevron-down-Small.svg" alt="" width="16" class="ms-auto rotate__180">
+              </div>
+              <div class="tab__body d-none"></div>
+            </div>
+            <hr>
+            <div class="tab">
+              <div class="tab__header d-flex align-items-center cursor__pointer gap-2_5 py-2_5 px-3_5">
+                <img src="./assets/icons/credit_card.svg" alt="" width="24">
+
+                <span>Payment information</span>
+
+                <img src="./assets/icons/Chevron-down-Small.svg" alt="" width="16" class="ms-auto rotate__180">
+              </div>
+              <div class="tab__body d-none"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard__plate right flex-grow-1 py-2 px-4">
+          <div class="d-flex align-items-start justify-content-between">
+            <img src="./assets/logo-medium.png" alt="" width="304">
+
+            <a href="#" class="d-flex gap-1 invoice-link">
+              <img src="./assets/icons/AMP-Small.svg" alt="" width="27">
+              <span>Create Invoice</span>
+            </a>
+          </div>
+
+          <h2 class="table__heading d-flex align-items-center gap-1 mt-4">
+            <img src="./assets/icons/Document-2.svg" alt="" width="24">
+
+            SCOPE OF WORK
+          </h2>
+
+          <table class="w-100 mt-2">
+            <thead>
+              <tr>
+                <th>
+                  <img src="./assets/icons/sort.svg" alt="" width="24" class="me-1">Type
+                </th>
+                <th>Activity</th>
+                <th>Sub activity</th>
+                <th>Qty <img src="./assets/icons/chevrone-down-2.svg" alt="" width="24"></th>
+                <th>Amount <img src="./assets/icons/chevrone-down-2.svg" alt="" width="24"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Material Cols</td>
+                <td>4070281000000</td>
+                <td>40702810000007654321</td>
+                <td>250 mt</td>
+                <td>kr 99,00</td>
+              </tr>
+              <tr>
+                <td>Labour</td>
+                <td>4070281000000</td>
+                <td></td>
+                <td>5 hr</td>
+                <td>kr 9,00</td>
+              </tr>
+              <tr>
+                <td class="muted">Taxes</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>kr 20,00</td>
+              </tr>
+              <tr>
+                <td>Discount</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>kr 8,00</td>
+              </tr>
+              <tr>
+                <td class="latest"><b>Net amount</b></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b>kr 120,00</b></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="buttons d-flex justify-content-between gap-1 mt-4">
+            <button>+Add work</button>
+            <button>Preview Quote</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

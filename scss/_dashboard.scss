@@ -199,4 +199,190 @@
 			}
 		}
 	}
+
+	&__plate {
+		background-color: #fff;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		&.left {
+			width: 60.6rem;
+		}
+
+		&.right {
+			font-family: "Poppins";
+			hr {
+				background-color: #c7c7c7;
+				margin: 0;
+				opacity: 1;
+			}
+
+			.invoice-link {
+				color: #6330c6;
+				font-size: 1.8rem;
+			}
+
+			.table__heading {
+				font-size: 1.8rem;
+				color: #666666;
+				font-weight: 500;
+			}
+
+			table {
+				tr {
+					border-top: 1px solid #d2d1d1;
+				}
+				th {
+					font-size: 1.4rem;
+					line-height: 1.8rem;
+					color: #575f6e;
+					padding: 1.6rem 2.4rem;
+					font-weight: 400;
+				}
+				td {
+					padding: 2.4rem;
+					font-weight: 400;
+					font-size: 1.8rem;
+					color: #242426;
+					&.muted {
+						color: #9a9ea5;
+					}
+					&.latest {
+						color: #6330c6;
+					}
+				}
+			}
+
+			.buttons {
+				button {
+					border-radius: 1rem;
+					border: 1px solid #6330c6;
+					color: #6330c6;
+					background-color: transparent;
+					padding: 0.8rem;
+					font-size: 1.8rem;
+					line-height: 2.8rem;
+					&:hover {
+						background-color: #6330c6;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	&__breadcrumbs {
+		font-family: "Roboto";
+		color: #575f6e;
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		a {
+			color: #007aff;
+			&:last-of-type {
+				text-decoration: none;
+				color: #575f6e;
+				pointer-events: none;
+			}
+		}
+	}
+
+	&__tabs {
+		font-family: "Poppins";
+		font-weight: 400;
+		.tab {
+			&__header {
+				font-size: 1.8rem;
+				line-height: 2.4rem;
+				color: #666;
+				user-select: none;
+			}
+			&__body {
+				padding: 0 7.4rem 3rem 8.7rem;
+
+				.id {
+					font-weight: 600;
+					font-size: 3.2rem;
+					line-height: 1;
+				}
+
+				.muted {
+					font-size: 1.4rem;
+					line-height: 1.8rem;
+					color: #9a9ea5;
+				}
+
+				.buttons {
+					button {
+						font-size: 1.4rem;
+						line-height: 2rem;
+						letter-spacing: -0.15px;
+						color: #6330c6;
+						border: 1px solid currentColor;
+						background-color: transparent;
+						&:hover {
+							color: #fff;
+							background-color: #6330c6;
+						}
+					}
+				}
+
+				.status {
+					font-size: 1.4rem;
+					line-height: 2rem;
+					color: #000;
+					letter-spacing: -0.15px;
+					padding: 0.6rem 1.2rem;
+					background-color: #ccc;
+					border-radius: 2rem;
+					&.pending {
+						background-color: #ffcc00;
+					}
+					&.active {
+						background-color: #34c759;
+					}
+					&.expiring {
+						background-color: #ff3b30;
+					}
+					&.archived {
+						background-color: #d4d4d4;
+					}
+				}
+
+				.form {
+					font-size: 1.4rem;
+					line-height: 2rem;
+					&__label {
+						display: block;
+						color: #5f6377;
+						padding-bottom: 0.6rem;
+					}
+					&__input {
+						height: 4.2rem;
+						width: 100%;
+						padding: 0 1.2rem;
+						line-height: normal;
+						border: 1px solid #cfd0d7;
+						background-color: #fcfcfd;
+						color: #1a203d;
+						outline: none;
+
+						&[type="tel"] {
+							padding-left: 6.5rem;
+						}
+					}
+
+					.country-code {
+						background-color: transparent;
+						color: #1a203d;
+						width: 6.3rem;
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						border: none;
+						text-align: center;
+						outline: none;
+					}
+				}
+			}
+		}
+	}
 }
