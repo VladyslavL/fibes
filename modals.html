@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <div class="modal__overlay p-10">
+    <div class="modal__window modal--invoice">
+      <div class="modal__header d-flex justify-content-between align-items-start">
+        <h2 class="modal__heading py-3_5 px-3">Invoice</h2>
+        <div class="modal__close p-1_5 m-1_5 cursor__pointer">
+          <img src="./assets/icons/close.svg" alt="" width="12">
+        </div>
+      </div>
+
+      <div class="modal__invoice">
+        <div class="container d-flex gap-4 pb-3">
+          <div class="w-50">
+            <p><strong>Invoice Number:</strong></p>
+            <p class="muted">12345678</p>
+
+            <p class="mt-1_6"><strong>Date:</strong></p>
+            <p class="muted">01 August, 2020</p>
+          </div>
+
+          <div class="w-50">
+            <img src="./assets/logo-medium.png" alt="" class="mt-n5">
+          </div>
+        </div>
+
+        <div class="container d-flex gap-4 py-3 bg-grey">
+          <div class="w-50">
+            <p><strong>Bill To:</strong></p>
+            <p class="muted">Sarah King</p>
+            <p class="muted">957 North Street</p>
+            <p class="muted">London, SE20 3JW</p>
+            <p class="muted">United Kingdom</p>
+            <p class="muted">Mobile : +91 8123 345 678</p>
+
+            <p class="mt-1_6"><strong>Tax Number::</strong></p>
+            <p class="muted">12345 6789 GB0001</p>
+          </div>
+
+          <div class="w-50">
+            <p><strong>Bill From:</strong></p>
+            <p class="muted">Sarah King</p>
+            <p class="muted">957 North Street</p>
+            <p class="muted">London, SE20 3JW</p>
+            <p class="muted">United Kingdom</p>
+            <p class="muted">Mobile : +91 8123 345 678</p>
+
+            <p class="mt-1_6"><strong>Tax Number::</strong></p>
+            <p class="muted">12345 6789 GB0001</p>
+          </div>
+        </div>
+
+        <div class="container d-flex py-0_8 bg-lightgrey">
+          <div class="w-50">
+            <small><strong>ITEM</strong></small>
+          </div>
+          <div class="w-50 d-flex">
+            <small class="w-25"><strong>COST</strong></small>
+            <small class="w-25"><strong>QTY</strong></small>
+            <small class="w-50 text-end"><strong>PRICE</strong></small>
+          </div>
+        </div>
+
+        <div class="container d-flex py-1_6">
+          <div class="w-50">
+            <p class="py-0_8"><strong>Material</strong></p>
+            <p class="py-0_8"><strong>Labour</strong></p>
+          </div>
+          <div class="w-50">
+            <div class="d-flex py-0_8">
+              <p  class="w-25">kr 99.00</p>
+              <p  class="w-25">250 mts</p>
+              <p  class="w-50 text-end">kr 99.00</p>
+            </div>
+            <div class="d-flex py-0_8">
+              <p  class="w-25">kr 9.00</p>
+              <p  class="w-25">5</p>
+              <p  class="w-50 text-end">kr 9.00</p>
+            </div>
+            <hr class="my-1_5">
+            <div class="d-flex">
+              <p  class="w-50">Subtotal</p>
+              <p  class="w-50 text-end">kr 108.00</p>
+            </div>
+            <div class="d-flex py-0_4">
+              <p  class="w-50">Discount <span class="muted">(BLACKFRIDAY)</span></p>
+              <p  class="w-50 text-end">-kr 8.00</p>
+            </div>
+            <div class="d-flex py-0_4">
+              <p  class="w-50">VAT</p>
+              <p  class="w-50 text-end">kr20.00</p>
+            </div>
+            <div class="d-flex py-0_4">
+              <p  class="w-50"><strong>Invoice Total</strong></p>
+              <p  class="w-50 text-end"><strong>kr120.00</strong></p>
+            </div>
+            <div class="d-flex py-0_4">
+              <p  class="w-50">Paid</p>
+              <p  class="w-50 text-end">-kr120.00</p>
+            </div>
+            <hr class="my-1_5">
+            <div class="d-flex py-0_4">
+              <p  class="w-50"><strong>Amount Due</strong></p>
+              <p  class="w-50 text-end"><strong>kr 0.00 USD</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container pb-5">
+            <p><strong>Payments:</strong></p>
+            <p class="muted">kr 120.00 payment from Visa ···· 1234</p>
+
+            <p class="mt-1_6"><strong>Notes:</strong></p>
+            <p class="muted">Add a note...</p>
+        </div>
+
+        <div class="container d-flex py-2_4 bg-lightgrey">
+          <div class="w-50">
+            <p><strong>Need help?</strong> <span class="muted">help@fibes.com</span></p>
+          </div>
+          <div class="w-50 d-flex">
+            <p><strong>Thanks for being a Fibes customer :)</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal__window">
+      <div class="modal__header d-flex justify-content-between align-items-start">
+        <h2 class="modal__heading py-3_5 px-3">Add work</h2>
+        <div class="modal__close p-1_5 m-1_5 cursor__pointer">
+          <img src="./assets/icons/close.svg" alt="" width="12">
+        </div>
+      </div>
+
+      <div class="modal__body p-3">
+        <div class="modal__form">
+          <h3 class="form__heading">Choose type of work</h3>
+          <div class="d-flex mt-4 gap-4">
+            <div class="form__nav w-25 flex-shrink-0">
+
+              <div class="d-flex flex-column gap-3">
+                <div class="input__radio d-flex align-items-center">
+                  <input type="radio" name="type_of_work" id="radio-1">
+                  <label class="ms-0_8" for="radio-1">Fabric</label>
+                </div>
+                <div class="input__radio d-flex align-items-center">
+                  <input type="radio" name="type_of_work" id="radio-2">
+                  <label class="ms-0_8" for="radio-2">Labour</label>
+                </div>
+                <div class="input__radio d-flex align-items-center">
+                  <input type="radio" name="type_of_work" id="radio-3">
+                  <label class="ms-0_8" for="radio-3">Accessories</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form d-flex flex-wrap gap-3">
+              <div>
+                <label for="">Fabric Type</label>
+                <select name="" id="" class="form__field">
+                  <option value="" selected></option>
+                  <option value="">Type 1</option>
+                  <option value="">Type 2</option>
+                  <option value="">Some loooooooong Type 3</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="">Length</label>
+                <input type="number" class="form__field">
+              </div>
+              <div>
+                <label for="">Quoted price</label>
+                <input type="number" class="form__field">
+              </div>
+              <div>
+                <label for="">Adjustments</label>
+                <input type="number" class="form__field">
+              </div>
+              <div>
+                <label for="">Final price</label>
+                <input type="text" class="form__field">
+              </div>
+
+              <div class="w-100 d-flex flex-wrap gap-2">
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-1">
+                  <label class="ms-0_8 p-0" for="cehckbox-1">Fabric</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-2">
+                  <label class="ms-0_8 p-0" for="cehckbox-2">Labour</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-3">
+                  <label class="ms-0_8 p-0" for="cehckbox-3">Accessories</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-4">
+                  <label class="ms-0_8 p-0" for="cehckbox-4">Fabric</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-5">
+                  <label class="ms-0_8 p-0" for="cehckbox-5">Labour</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-6">
+                  <label class="ms-0_8 p-0" for="cehckbox-6">Accessories</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-7">
+                  <label class="ms-0_8 p-0" for="cehckbox-7">Fabric</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-8">
+                  <label class="ms-0_8 p-0" for="cehckbox-8">Labour</label>
+                </div>
+                <div class="input__checkbox d-flex align-items-center">
+                  <input type="checkbox" name="checkboxes" id="cehckbox-9">
+                  <label class="ms-0_8 p-0" for="cehckbox-9">Accessories</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4">
+
+      <div class="modal__footer d-flex justify-content-end gap-2 py-2_4 px-3">
+        <button type="button">Cancel</button>
+        <button type="button">Add</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

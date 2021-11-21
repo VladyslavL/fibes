@@ -812,6 +812,16 @@ progress {
   --bs-gutter-y: 0;
 }
 
+.g-0_4,
+.gx-0_4 {
+  --bs-gutter-x: 0.4rem;
+}
+
+.g-0_4,
+.gy-0_4 {
+  --bs-gutter-y: 0.4rem;
+}
+
 .g-0_8,
 .gx-0_8 {
   --bs-gutter-x: 0.8rem;
@@ -1163,6 +1173,16 @@ progress {
   .g-lg-0,
 .gy-lg-0 {
     --bs-gutter-y: 0;
+  }
+
+  .g-lg-0_4,
+.gx-lg-0_4 {
+    --bs-gutter-x: 0.4rem;
+  }
+
+  .g-lg-0_4,
+.gy-lg-0_4 {
+    --bs-gutter-y: 0.4rem;
   }
 
   .g-lg-0_8,
@@ -5928,6 +5948,10 @@ textarea.form-control-lg {
   gap: 0 !important;
 }
 
+.gap-0_4 {
+  gap: 0.4rem !important;
+}
+
 .gap-0_8 {
   gap: 0.8rem !important;
 }
@@ -6132,6 +6156,10 @@ textarea.form-control-lg {
   margin: 0 !important;
 }
 
+.m-0_4 {
+  margin: 0.4rem !important;
+}
+
 .m-0_8 {
   margin: 0.8rem !important;
 }
@@ -6215,6 +6243,11 @@ textarea.form-control-lg {
 .mx-0 {
   margin-right: 0 !important;
   margin-left: 0 !important;
+}
+
+.mx-0_4 {
+  margin-right: 0.4rem !important;
+  margin-left: 0.4rem !important;
 }
 
 .mx-0_8 {
@@ -6322,6 +6355,11 @@ textarea.form-control-lg {
   margin-bottom: 0 !important;
 }
 
+.my-0_4 {
+  margin-top: 0.4rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
 .my-0_8 {
   margin-top: 0.8rem !important;
   margin-bottom: 0.8rem !important;
@@ -6426,6 +6464,10 @@ textarea.form-control-lg {
   margin-top: 0 !important;
 }
 
+.mt-0_4 {
+  margin-top: 0.4rem !important;
+}
+
 .mt-0_8 {
   margin-top: 0.8rem !important;
 }
@@ -6508,6 +6550,10 @@ textarea.form-control-lg {
 
 .me-0 {
   margin-right: 0 !important;
+}
+
+.me-0_4 {
+  margin-right: 0.4rem !important;
 }
 
 .me-0_8 {
@@ -6594,6 +6640,10 @@ textarea.form-control-lg {
   margin-bottom: 0 !important;
 }
 
+.mb-0_4 {
+  margin-bottom: 0.4rem !important;
+}
+
 .mb-0_8 {
   margin-bottom: 0.8rem !important;
 }
@@ -6678,6 +6728,10 @@ textarea.form-control-lg {
   margin-left: 0 !important;
 }
 
+.ms-0_4 {
+  margin-left: 0.4rem !important;
+}
+
 .ms-0_8 {
   margin-left: 0.8rem !important;
 }
@@ -6758,6 +6812,10 @@ textarea.form-control-lg {
   margin-left: auto !important;
 }
 
+.m-n0_4 {
+  margin: -0.4rem !important;
+}
+
 .m-n0_8 {
   margin: -0.8rem !important;
 }
@@ -6832,6 +6890,11 @@ textarea.form-control-lg {
 
 .m-n25 {
   margin: -25rem !important;
+}
+
+.mx-n0_4 {
+  margin-right: -0.4rem !important;
+  margin-left: -0.4rem !important;
 }
 
 .mx-n0_8 {
@@ -6929,6 +6992,11 @@ textarea.form-control-lg {
   margin-left: -25rem !important;
 }
 
+.my-n0_4 {
+  margin-top: -0.4rem !important;
+  margin-bottom: -0.4rem !important;
+}
+
 .my-n0_8 {
   margin-top: -0.8rem !important;
   margin-bottom: -0.8rem !important;
@@ -7024,6 +7092,10 @@ textarea.form-control-lg {
   margin-bottom: -25rem !important;
 }
 
+.mt-n0_4 {
+  margin-top: -0.4rem !important;
+}
+
 .mt-n0_8 {
   margin-top: -0.8rem !important;
 }
@@ -7098,6 +7170,10 @@ textarea.form-control-lg {
 
 .mt-n25 {
   margin-top: -25rem !important;
+}
+
+.me-n0_4 {
+  margin-right: -0.4rem !important;
 }
 
 .me-n0_8 {
@@ -7176,6 +7252,10 @@ textarea.form-control-lg {
   margin-right: -25rem !important;
 }
 
+.mb-n0_4 {
+  margin-bottom: -0.4rem !important;
+}
+
 .mb-n0_8 {
   margin-bottom: -0.8rem !important;
 }
@@ -7250,6 +7330,10 @@ textarea.form-control-lg {
 
 .mb-n25 {
   margin-bottom: -25rem !important;
+}
+
+.ms-n0_4 {
+  margin-left: -0.4rem !important;
 }
 
 .ms-n0_8 {
@@ -7332,6 +7416,10 @@ textarea.form-control-lg {
   padding: 0 !important;
 }
 
+.p-0_4 {
+  padding: 0.4rem !important;
+}
+
 .p-0_8 {
   padding: 0.8rem !important;
 }
@@ -7411,6 +7499,11 @@ textarea.form-control-lg {
 .px-0 {
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+
+.px-0_4 {
+  padding-right: 0.4rem !important;
+  padding-left: 0.4rem !important;
 }
 
 .px-0_8 {
@@ -7513,6 +7606,11 @@ textarea.form-control-lg {
   padding-bottom: 0 !important;
 }
 
+.py-0_4 {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+
 .py-0_8 {
   padding-top: 0.8rem !important;
   padding-bottom: 0.8rem !important;
@@ -7612,6 +7710,10 @@ textarea.form-control-lg {
   padding-top: 0 !important;
 }
 
+.pt-0_4 {
+  padding-top: 0.4rem !important;
+}
+
 .pt-0_8 {
   padding-top: 0.8rem !important;
 }
@@ -7690,6 +7792,10 @@ textarea.form-control-lg {
 
 .pe-0 {
   padding-right: 0 !important;
+}
+
+.pe-0_4 {
+  padding-right: 0.4rem !important;
 }
 
 .pe-0_8 {
@@ -7772,6 +7878,10 @@ textarea.form-control-lg {
   padding-bottom: 0 !important;
 }
 
+.pb-0_4 {
+  padding-bottom: 0.4rem !important;
+}
+
 .pb-0_8 {
   padding-bottom: 0.8rem !important;
 }
@@ -7850,6 +7960,10 @@ textarea.form-control-lg {
 
 .ps-0 {
   padding-left: 0 !important;
+}
+
+.ps-0_4 {
+  padding-left: 0.4rem !important;
 }
 
 .ps-0_8 {
@@ -8415,6 +8529,10 @@ textarea.form-control-lg {
     gap: 0 !important;
   }
 
+  .gap-lg-0_4 {
+    gap: 0.4rem !important;
+  }
+
   .gap-lg-0_8 {
     gap: 0.8rem !important;
   }
@@ -8619,6 +8737,10 @@ textarea.form-control-lg {
     margin: 0 !important;
   }
 
+  .m-lg-0_4 {
+    margin: 0.4rem !important;
+  }
+
   .m-lg-0_8 {
     margin: 0.8rem !important;
   }
@@ -8702,6 +8824,11 @@ textarea.form-control-lg {
   .mx-lg-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
+  }
+
+  .mx-lg-0_4 {
+    margin-right: 0.4rem !important;
+    margin-left: 0.4rem !important;
   }
 
   .mx-lg-0_8 {
@@ -8809,6 +8936,11 @@ textarea.form-control-lg {
     margin-bottom: 0 !important;
   }
 
+  .my-lg-0_4 {
+    margin-top: 0.4rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
   .my-lg-0_8 {
     margin-top: 0.8rem !important;
     margin-bottom: 0.8rem !important;
@@ -8913,6 +9045,10 @@ textarea.form-control-lg {
     margin-top: 0 !important;
   }
 
+  .mt-lg-0_4 {
+    margin-top: 0.4rem !important;
+  }
+
   .mt-lg-0_8 {
     margin-top: 0.8rem !important;
   }
@@ -8995,6 +9131,10 @@ textarea.form-control-lg {
 
   .me-lg-0 {
     margin-right: 0 !important;
+  }
+
+  .me-lg-0_4 {
+    margin-right: 0.4rem !important;
   }
 
   .me-lg-0_8 {
@@ -9081,6 +9221,10 @@ textarea.form-control-lg {
     margin-bottom: 0 !important;
   }
 
+  .mb-lg-0_4 {
+    margin-bottom: 0.4rem !important;
+  }
+
   .mb-lg-0_8 {
     margin-bottom: 0.8rem !important;
   }
@@ -9165,6 +9309,10 @@ textarea.form-control-lg {
     margin-left: 0 !important;
   }
 
+  .ms-lg-0_4 {
+    margin-left: 0.4rem !important;
+  }
+
   .ms-lg-0_8 {
     margin-left: 0.8rem !important;
   }
@@ -9245,6 +9393,10 @@ textarea.form-control-lg {
     margin-left: auto !important;
   }
 
+  .m-lg-n0_4 {
+    margin: -0.4rem !important;
+  }
+
   .m-lg-n0_8 {
     margin: -0.8rem !important;
   }
@@ -9319,6 +9471,11 @@ textarea.form-control-lg {
 
   .m-lg-n25 {
     margin: -25rem !important;
+  }
+
+  .mx-lg-n0_4 {
+    margin-right: -0.4rem !important;
+    margin-left: -0.4rem !important;
   }
 
   .mx-lg-n0_8 {
@@ -9416,6 +9573,11 @@ textarea.form-control-lg {
     margin-left: -25rem !important;
   }
 
+  .my-lg-n0_4 {
+    margin-top: -0.4rem !important;
+    margin-bottom: -0.4rem !important;
+  }
+
   .my-lg-n0_8 {
     margin-top: -0.8rem !important;
     margin-bottom: -0.8rem !important;
@@ -9511,6 +9673,10 @@ textarea.form-control-lg {
     margin-bottom: -25rem !important;
   }
 
+  .mt-lg-n0_4 {
+    margin-top: -0.4rem !important;
+  }
+
   .mt-lg-n0_8 {
     margin-top: -0.8rem !important;
   }
@@ -9585,6 +9751,10 @@ textarea.form-control-lg {
 
   .mt-lg-n25 {
     margin-top: -25rem !important;
+  }
+
+  .me-lg-n0_4 {
+    margin-right: -0.4rem !important;
   }
 
   .me-lg-n0_8 {
@@ -9663,6 +9833,10 @@ textarea.form-control-lg {
     margin-right: -25rem !important;
   }
 
+  .mb-lg-n0_4 {
+    margin-bottom: -0.4rem !important;
+  }
+
   .mb-lg-n0_8 {
     margin-bottom: -0.8rem !important;
   }
@@ -9737,6 +9911,10 @@ textarea.form-control-lg {
 
   .mb-lg-n25 {
     margin-bottom: -25rem !important;
+  }
+
+  .ms-lg-n0_4 {
+    margin-left: -0.4rem !important;
   }
 
   .ms-lg-n0_8 {
@@ -9819,6 +9997,10 @@ textarea.form-control-lg {
     padding: 0 !important;
   }
 
+  .p-lg-0_4 {
+    padding: 0.4rem !important;
+  }
+
   .p-lg-0_8 {
     padding: 0.8rem !important;
   }
@@ -9898,6 +10080,11 @@ textarea.form-control-lg {
   .px-lg-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+
+  .px-lg-0_4 {
+    padding-right: 0.4rem !important;
+    padding-left: 0.4rem !important;
   }
 
   .px-lg-0_8 {
@@ -10000,6 +10187,11 @@ textarea.form-control-lg {
     padding-bottom: 0 !important;
   }
 
+  .py-lg-0_4 {
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+
   .py-lg-0_8 {
     padding-top: 0.8rem !important;
     padding-bottom: 0.8rem !important;
@@ -10099,6 +10291,10 @@ textarea.form-control-lg {
     padding-top: 0 !important;
   }
 
+  .pt-lg-0_4 {
+    padding-top: 0.4rem !important;
+  }
+
   .pt-lg-0_8 {
     padding-top: 0.8rem !important;
   }
@@ -10177,6 +10373,10 @@ textarea.form-control-lg {
 
   .pe-lg-0 {
     padding-right: 0 !important;
+  }
+
+  .pe-lg-0_4 {
+    padding-right: 0.4rem !important;
   }
 
   .pe-lg-0_8 {
@@ -10259,6 +10459,10 @@ textarea.form-control-lg {
     padding-bottom: 0 !important;
   }
 
+  .pb-lg-0_4 {
+    padding-bottom: 0.4rem !important;
+  }
+
   .pb-lg-0_8 {
     padding-bottom: 0.8rem !important;
   }
@@ -10337,6 +10541,10 @@ textarea.form-control-lg {
 
   .ps-lg-0 {
     padding-left: 0 !important;
+  }
+
+  .ps-lg-0_4 {
+    padding-left: 0.4rem !important;
   }
 
   .ps-lg-0_8 {
@@ -10527,6 +10735,24 @@ p {
 
 .bg--pattern {
   background: url(../assets/patern.svg) top -18rem left repeat-x, url(../assets/patern.svg) bottom -18rem left repeat-x;
+}
+
+.input__radio input {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+.input__radio label {
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: -0.15px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.9);
+}
+.input__checkbox input {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
 }
 
 .sidebar {
@@ -10980,4 +11206,99 @@ p {
   border: none;
   text-align: center;
   outline: none;
+}
+
+.modal__window {
+  background-color: #fff;
+  border: 1px solid rgba(29, 28, 29, 0.13);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 107rem;
+  font-family: "Poppins";
+  margin: auto;
+}
+.modal__window hr {
+  background: rgba(29, 28, 29, 0.13);
+  opacity: 1;
+}
+.modal--invoice {
+  max-width: 88rem;
+}
+.modal__heading {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0;
+}
+.modal__overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+.modal__form .form__heading {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+.modal__form .form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #1d1c1d;
+  padding-bottom: 0.8rem;
+  display: block;
+}
+.modal__form .form__field {
+  height: 2.8rem;
+  background: #ffffff;
+  border: 1px solid rgba(29, 28, 29, 0.5);
+  border-radius: 3px;
+  padding: 0 1rem;
+}
+.modal__footer button {
+  background: #ffffff;
+  border: 1px solid rgba(29, 28, 29, 0.5);
+  border-radius: 3px;
+  font-size: 1.5rem;
+  color: #1d1c1d;
+  line-height: 2.2rem;
+  padding: 0.6rem 0.9rem;
+  min-width: 10rem;
+}
+.modal__footer button:hover {
+  background: #6330c6;
+  border: 1px solid #6330c6;
+  color: #fff;
+}
+.modal__invoice {
+  font-family: "Inter";
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #19181a;
+}
+.modal__invoice .container {
+  padding-left: 5.6rem;
+  padding-right: 5.6rem;
+}
+.modal__invoice .muted {
+  color: #6f6e70;
+}
+.modal__invoice strong {
+  font-weight: 600;
+}
+.modal__invoice small, .modal__invoice .small {
+  font-size: 1.2rem;
+}
+.modal__invoice .bg-grey {
+  background: #f2f2f2;
+}
+.modal__invoice .bg-lightgrey {
+  background: #f8f7fa;
+}
+.modal__invoice hr {
+  background: #19181a;
+  opacity: 1;
+  height: 0.2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -46,3 +46,28 @@ p {
 		background: url(../assets/patern.svg) top -18rem left repeat-x, url(../assets/patern.svg) bottom -18rem left repeat-x;
 	}
 }
+
+.input {
+	&__radio {
+		input {
+			width: 2.4rem;
+			height: 2.4rem;
+			cursor: pointer;
+		}
+
+		label {
+			font-size: 1.8rem;
+			line-height: 1;
+			letter-spacing: -0.15px;
+			cursor: pointer;
+			color: rgba(0, 0, 0, 0.9);
+		}
+	}
+	&__checkbox {
+		input {
+			width: 2.4rem;
+			height: 2.4rem;
+			cursor: pointer;
+		}
+	}
+}
